@@ -1,0 +1,73 @@
+✅ 𝗥𝗼𝘂𝗻𝗱 𝟭: 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 + 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 (𝟲𝟬 𝗺𝗶𝗻𝘀)
+🔹 Started with an in-depth discussion on my project responsibilities and architecture was asked to illustrate the overall project flow using a diagram
+🔹 Questions on how we handle sensitive data securely on the frontend
+🔹 Scenario-based async problem: multiple async operations with partial failure handling
+🔹 Asked to write a polyfill for bind and explain the use of call, apply, and bind
+🔹 Object manipulation task based on nested JSON structures
+🔹 Covered frontend performance optimizations:
+- Debouncing and throttling
+- Code splitting and dynamic imports
+- Critical CSS extraction
+- Reducing reflows and repaints
+- Optimizing third-party script loading
+
+✅ 𝗥𝗼𝘂𝗻𝗱 𝟮: 𝗥𝗲𝗮𝗰𝘁 + 𝗪𝗲𝗯 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆 (𝟲𝟬 𝗺𝗶𝗻𝘀)
+🔹 Detailed discussion on React lifecycle methods in both class and functional components
+🔹 Explored useEffect behavior during re-renders and dependency updates
+🔹 Questions around component structuring, state management, and props handling
+🔹 Security-focused scenario: how to safely render user-generated content and avoid XSS
+🔹 Web security:
+- How to safely render dynamic HTML and prevent XSS
+- Protecting against Cross-Site Request Forgery (CSRF) using tokens
+- Implementing input sanitization and output encoding
+- Defending against content spoofing, clickjacking, and open redirects
+🔹 Asked how I approach secure storage handling (localStorage / sessionStorage)
+
+❌ 𝗥𝗼𝘂𝗻𝗱 𝟯: 𝗧𝗵𝗲 𝗥𝗼𝘂𝗻𝗱 𝗧𝗵𝗮𝘁 𝗖𝗵𝗮𝗻𝗴𝗲𝗱 𝗘𝘃𝗲𝗿𝘆𝘁𝗵𝗶𝗻𝗴 
+Everything was on track until the final round turned out to be a face-to-face interview in Bangalore. I was in my hometown due to an emergency and couldn’t make it.
+Sometimes, it's not the skills — it’s just the timing.
+
+𝗜𝗳 𝘆𝗼𝘂'𝗿𝗲 𝗽𝗿𝗲𝗽𝗮𝗿𝗶𝗻𝗴 𝗳𝗼𝗿 𝗳𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗶𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄𝘀: https://lnkd.in/gVHppUbj
+𝗖𝗼𝘂𝗽𝗼𝗻: DIMP25
+
+
+
+➤ Commonly Asked React Interview Questions (Divided into Levels)
+
+𝗕𝗮𝘀𝗶𝗰 𝗟𝗲𝘃𝗲𝗹 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀:
+
+1. What is React and how does it work?
+2. What are the differences between functional and class components?
+3. What are props and state? How are they different?
+4. What is JSX, and why is it used in React?
+5. How do you create a simple React component?
+6. What is the Virtual DOM, and why is it important?
+7. What is the purpose of the key prop in React lists?
+8. How do you handle events in React?
+9. What are default props in React?
+10. What is conditional rendering in React?
+
+𝗠𝗼𝗱𝗲𝗿𝗮𝘁𝗲 𝗟𝗲𝘃𝗲𝗹 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀:
+
+11. What are React Hooks? Can you explain useState and useEffect with examples?
+12. What is the difference between controlled and uncontrolled components?
+13. What is React Router, and how does client-side routing work?
+14. What is the Context API, and when should you use it instead of Redux?
+15. What is prop drilling, and how can it be avoided?
+16. What is React.memo, and how does it help with performance optimization?
+17. What is the difference between useMemo and useCallback?
+18. What is a Higher-Order Component (HOC), and how is it used?
+19. How does React handle forms, and what are controlled inputs?
+20. How does React handle re-renders, and how can you optimize unnecessary renders?
+21. What is reconciliation in React?
+22. How does React’s diffing algorithm work?
+23. What is React.lazy and Suspense? How does lazy loading work in React?
+24. What are error boundaries, and how do they work?
+25. How do you handle authentication and protected routes in React?
+26. What are render props, and how are they different from HOCs?
+27. How does server-side rendering (SSR) differ from client-side rendering (CSR) in React?
+28. What are React Fiber and Concurrent Mode?
+29. How do you test React components? What are the commonly used testing libraries?
+
+
+https://docs.google.com/document/d/1Zx3FUZqjwqri5X6jGeuJ47QO4aO_7C_YKiKpaneeHI8/edit?tab=t.0

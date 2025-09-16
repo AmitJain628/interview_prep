@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="search-container">
+    <span class="search-icon">&#128269;</span> 
+    <input type="text" id="search-input" placeholder="Search..." />
+    <button id="search-btn">Search</button>
+  </div>
+
+  <div id="results"></div>
+
+</body>
+</html>
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    width: 300px;
+    position: relative;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    color: #888;
+  }
+  
+  #search-input {
+    padding: 10px 10px 10px 35px; /* Add left padding for the icon */
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+  }
+
+  .search::plae
+  
+  #search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  #search-btn:hover {
+    background-color: #0056b3;
+  }
+  

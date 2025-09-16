@@ -1,0 +1,8 @@
+
+export enum NotificationType {
+    FRIEND_REQUEST = "FRIEND_REQUEST",
+    FRIEND_REQUEST_ACCEPTED = "FRIEND_REQUEST_ACCEPTED",
+    LIKE = "LIKE",
+    COMMENT = "COMMENT",
+    MENTION = "MENTION"
+}
