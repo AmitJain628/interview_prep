@@ -28,7 +28,7 @@ export default function App() {
         newBoard[i].every((row) => row === newBoard[i][0])
       ) {
         setWinner(newBoard[i][0]);
-        return;
+        return true;
       }
     }
 
@@ -40,7 +40,7 @@ export default function App() {
         })
       ) {
         setWinner(newBoard[0][i]);
-        return;
+        return true;
       }
     }
 
@@ -53,7 +53,7 @@ export default function App() {
     ) {
       console.log("calling here");
       setWinner(newBoard[0][0]);
-      return;
+      return true;
     }
 
     if (
@@ -65,7 +65,7 @@ export default function App() {
     ) {
       console.log("calling here");
       setWinner(newBoard[0][N - 1]);
-      return;
+      return true;
     }
   };
 
