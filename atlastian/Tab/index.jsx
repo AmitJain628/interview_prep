@@ -104,3 +104,53 @@ export default function Tab() {
     </div>
   );
 }
+
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Tab header with flex */
+.tab-header {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Each tab item */
+.tab-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  margin-right: 2px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect */
+.tab-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* Active tab */
+.tab-item.active {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+/* Tab content */
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ccc;
+  min-height: 100px;
+  background-color: #ffffff;
+}
+
