@@ -1,0 +1,34 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .image-element {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  
+  .next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+  .image-transition {
+    transition: transform 0.5s linear;
+  }
+  

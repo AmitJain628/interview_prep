@@ -1,0 +1,26 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .row {
+    list-style: none;
+    padding-left: 10px;
+    text-align: left;
+  }
+  
+  .row a {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .row a:hover {
+    text-decoration: underline;
+  }
+  

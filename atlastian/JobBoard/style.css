@@ -1,0 +1,19 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .board {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 16px;
+    display: grid;
+    row-gap: 8px;
+  }
+  

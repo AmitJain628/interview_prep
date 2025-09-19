@@ -1,0 +1,60 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .bar-container {
+    border: 1px solid black;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    gap: 10px;
+    border-right: none;
+    border-top: none;
+    align-items: end;
+    position: relative;
+  }
+  
+  .bar {
+    flex: 1;
+    position: relative;
+  }
+  
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .x-axis {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-65%) translateY(-50%) rotate(-90deg);
+  }
+  
+  .y-axis {
+    position: absolute;
+    left: 40%;
+    transform: translateY(20px);
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    color: white;
+    transform: translate(50%, -120%);
+    width: max-content;
+    font-size: 0.75rem;
+    background-color: black;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .bar:hover .tooltip {
+    opacity: 1;
+  }
+  
