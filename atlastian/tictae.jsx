@@ -17,6 +17,8 @@ export default function App() {
         .fill(null)
         .map(() => Array(N).fill(""))
     );
+// setBoard(Array.from({ length: N }, () => Array(N).fill("")));
+
   }, []);
 
   const checkWinner = (newBoard) => {
