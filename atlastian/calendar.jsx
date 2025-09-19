@@ -4,6 +4,12 @@ import { FaBackward, FaForward } from "react-icons/fa";
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
+const eventColors = {
+  meeting: { background: "#cce5ff", border: "2px solid #007bff" },
+  holiday: { background: "#ffe5e5", border: "2px solid #ff4d4d" },
+  reminder: { background: "#e5ffe5", border: "2px solid #28a745" },
+};
+
 const MonthWiseCalendar = ({ eventsMapper, month, year }) => {
   const today = new Date(year, month);
   const firstDateOfMonth = startOfMonth(today);
@@ -23,30 +29,82 @@ const MonthWiseCalendar = ({ eventsMapper, month, year }) => {
   }, [eventsMapper, month, year]);
 
   return (
-    <div className="grid grid-cols-7 p-2">
-      {days.map((day) => (
-        <div className="flex justify-center border-2 border-gray-300 py-4 mb-2">{day}</div>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(7, 1fr)",
+        padding: "8px",
+        gap: "4px",
+      }}
+    >
+      {days.map((day, i) => (
+        <div
+          key={i}
+          style={{
+            textAlign: "center",
+            border: "2px solid #ccc",
+            padding: "12px",
+            marginBottom: "8px",
+            background: "#f3f3f3",
+            fontWeight: "bold",
+          }}
+        >
+          {day}
+        </div>
       ))}
 
       {Array.from({ length: firstDay }).map((_, i) => (
-        <div key={`empty-${i}`} className="border-2 border-gray w-full h-28"></div>
+        <div
+          key={`empty-${i}`}
+          style={{
+            border: "2px solid #ccc",
+            height: "120px",
+            background: "#f9f9f9",
+          }}
+        ></div>
       ))}
 
       {Array.from({ length: lastDateOfMonth }).map((_, index) => (
-        <div key={index} className="border-2 border-gray flex flex-col items-center w-full h-28">
+        <div
+          key={index}
+          style={{
+            border: "2px solid #ccc",
+            height: "120px",
+            position: "relative",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
           {netToday.getDate() === index + 1 &&
             netToday.getMonth() === month &&
             netToday.getFullYear() === year && (
-              <div className="w-full flex justify-end">
-                <div className="w-4 h-4 bg-green-800 rounded-full"></div>
-              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "4px",
+                  right: "4px",
+                  width: "12px",
+                  height: "12px",
+                  background: "green",
+                  borderRadius: "50%",
+                }}
+              ></div>
             )}
-          <div className="flex justify-center items-center h-32">
-            {index + 1}
-          </div>
+          <div style={{ marginTop: "8px", fontWeight: "bold" }}>{index + 1}</div>
           {currentMonthMapper[index + 1] && (
             <div
-              className={`m-2 h-32 text-sm rounded-sm border-4 border-transparent font-bold ml-2 bg-${currentMonthMapper[index + 1].identifier}-200 flex items-center justify-center`}
+              style={{
+                margin: "8px",
+                padding: "4px",
+                borderRadius: "4px",
+                fontSize: "12px",
+                fontWeight: "bold",
+                textAlign: "center",
+                width: "80%",
+                color: "#333",
+                ...(eventColors[currentMonthMapper[index + 1].identifier] || {}),
+              }}
             >
               {currentMonthMapper[index + 1].title}
             </div>
@@ -71,8 +129,16 @@ export const EventCalendar = ({ events }) => {
   }, [events]);
 
   return (
-    <div className="mx-auto">
-      <div className="flex gap-x-4 items-center justify-center mb-4 mt-4">
+    <div style={{ maxWidth: "900px", margin: "auto", fontFamily: "Arial, sans-serif" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "16px",
+          alignItems: "center",
+          justifyContent: "center",
+          margin: "16px 0",
+        }}
+      >
         <button
           onClick={() => {
             if (month === 0) setYear(year - 1);
@@ -81,7 +147,7 @@ export const EventCalendar = ({ events }) => {
         >
           <FaBackward />
         </button>
-        <div className="font-bold">Event Calendar</div>
+        <div style={{ fontWeight: "bold", fontSize: "18px" }}>Event Calendar</div>
         <button
           onClick={() => {
             if (month === 11) setYear(year + 1);
@@ -90,7 +156,7 @@ export const EventCalendar = ({ events }) => {
         >
           <FaForward />
         </button>
-        <span>
+        <span style={{ fontSize: "14px", marginLeft: "8px" }}>
           {month + 1}/{year}
         </span>
       </div>
